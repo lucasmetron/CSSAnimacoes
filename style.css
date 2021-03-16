@@ -1,23 +1,56 @@
 
-@keyframes quadrado {
+/* @keyframes quadrado {
     0% {background-color: red; width: 100px;}
     25% {background-color: green;}
     50% {background-color: yellow; width: 400px;}
     100% {background-color: blue; width: 100px;}
+} */
+
+
+@keyframes move {
+    0%{left: 0px}
+    100%{left: 300px;}
 }
 
 
 .quadrado{
-    
-    width: 200px;
-    height: 200px;
+    position: relative;
+    width: 90px;
+    height: 90px;
     border: 2px solid;
+    margin-bottom: 10px;
+    text-align: center;
 
-    animation-name: quadrado;
-    animation-delay: 1s;
+    /* animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-name: move;
     animation-duration: 3s;
     animation-direction:alternate;
-    animation-fill-mode:both
+    animation-fill-mode: both; */
+
+    animation: move 3s linear 2s infinite alternate both;
     
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
+
+.div1{
+    animation-timing-function: linear;
+}
+
+.div2{
+    animation-timing-function: ease;
+}
+
+.div3{
+    animation-timing-function: ease-in;
+}
+
+.div4{
+    animation-timing-function: ease-out;
+}
+
+.div5{
+    animation-timing-function: ease-in-out;
+}
+
 
