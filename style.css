@@ -1,56 +1,22 @@
+.bt{
+    display: inline-block;
+    background-color: rgb(117, 117, 241);
+    padding: 20px;
+    color: white;
 
-/* @keyframes quadrado {
-    0% {background-color: red; width: 100px;}
-    25% {background-color: green;}
-    50% {background-color: yellow; width: 400px;}
-    100% {background-color: blue; width: 100px;}
-} */
-
-
-@keyframes move {
-    0%{left: 0px}
-    100%{left: 300px;}
-}
-
-
-.quadrado{
-    position: relative;
-    width: 90px;
-    height: 90px;
-    border: 2px solid;
-    margin-bottom: 10px;
-    text-align: center;
-
-    /* animation-delay: 2s;
-    animation-iteration-count: 3;
-    animation-name: move;
-    animation-duration: 3s;
-    animation-direction:alternate;
-    animation-fill-mode: both; */
-
-    animation: move 3s linear 2s infinite alternate both;
+    transition-property: background-color, padding, letter-spacing;
+    transition-duration: 0.5s;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
+    cursor:pointer;
+    border-radius: 10px;
     
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+  
 }
 
-.div1{
-    animation-timing-function: linear;
+.bt:hover{
+    background-color: rgb(57, 57, 121);
+    padding-left:50px ;
+    padding-right: 50px;
+    letter-spacing: 3px;
 }
-
-.div2{
-    animation-timing-function: ease;
-}
-
-.div3{
-    animation-timing-function: ease-in;
-}
-
-.div4{
-    animation-timing-function: ease-out;
-}
-
-.div5{
-    animation-timing-function: ease-in-out;
-}
-
-
